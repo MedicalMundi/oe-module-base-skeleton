@@ -1,4 +1,24 @@
 <?php
+
+/**
+ * This file is part of medicalmundi/brotea.
+ * (c) 2019-2021  MedicalMundi <info@medicalmundi@com>
+ * (c) 2019-2021  Zerai Teclai <teclaizerai@gmail.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace OpenEMR\Modules\CustomModuleSkeleton;
+
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+
+/**
+ * Note the below use statements are importing classes from the OpenEMR core codebase
+ */
+use OpenEMR\Menu\MenuEvent;
+use OpenEMR\Events\RestApiExtend\RestApiCreateEvent;
+
 /**
  * Bootstrap custom module skeleton.  This file is an example custom module that can be used
  * to create modules that can be utilized inside the OpenEMR system.  It is NOT intended for
@@ -12,17 +32,6 @@
  * @copyright Copyright (c) 2021 Stephen Nielson <stephen@nielson.org>
  * @license   https://github.com/openemr/openemr/blob/master/LICENSE GNU General Public License 3
  */
-
-namespace OpenEMR\Modules\CustomModuleSkeleton;
-
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
-
-/**
- * Note the below use statements are importing classes from the OpenEMR core codebase
- */
-use OpenEMR\Menu\MenuEvent;
-use OpenEMR\Events\RestApiExtend\RestApiCreateEvent;
-
 class Bootstrap
 {
     const MODULE_INSTALLATION_PATH = "";
