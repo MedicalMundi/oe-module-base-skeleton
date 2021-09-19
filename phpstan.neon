@@ -19,5 +19,6 @@ parameters:
     excludes_analyse:
         - src/Bootstrap.php
         - src/CustomSkeletonAPI.php
+        - tests/ExampleTest.php
 
     tmpDir: var/tools/phpstan/
