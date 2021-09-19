@@ -23,7 +23,10 @@ return static function (ContainerConfigurator $containerConfigurator): void {
 
     $parameters->set(
         'skip',
+
         [
+            __DIR__ . '/src/CustomSkeletonAPI.php',
+            __DIR__ . '/src/Bootstrap.php',
             BlankLineAfterOpeningTagFixer::class,
             LinebreakAfterOpeningTagFixer::class,
         ]
