@@ -35,6 +35,7 @@ jobs:
       matrix:
         php:
           - '7.1'
+          - '7.2'
       fail-fast: true
 
     steps:
