@@ -35,7 +35,6 @@ jobs:
       matrix:
         php:
           - '7.1'
-          - '7.2'
       fail-fast: true
 
     steps:
@@ -83,7 +82,7 @@ jobs:
       - name: Run easy-coding-standard
         run: vendor/bin/ecs check --ansi
 
-  core-test:
+  tests:
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'skip ci')"
 
@@ -91,6 +90,9 @@ jobs:
       matrix:
         php:
           - '7.1'
+          - '7.2'
+          - '7.3'
+          - '7.4'
       fail-fast: true
 
     steps:
