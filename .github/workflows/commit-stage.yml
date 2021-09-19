@@ -75,10 +75,11 @@ jobs:
           key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-${{ matrix.php }}
 
-      - name: Install dependencies
-        run: |
-          composer install --prefer-dist --no-progress --ansi
-          composer bin docheader install --no-progress --ansi
+      - name: Install application dependencies
+        run: composer install --prefer-dist --no-progress --ansi
+
+      - name: Install tool dependencies
+        run: composer bin docheader install --no-progress --ansi
 
       - name: Run docheader cheks
         run: ./vendor/bin/docheader check src/
