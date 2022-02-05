@@ -2,8 +2,8 @@
 
 /**
  * This file is part of medicalmundi/brotea.
- * (c) 2019-2021  MedicalMundi <info@medicalmundi@com>
- * (c) 2019-2021  Zerai Teclai <teclaizerai@gmail.com>
+ * (c) 2019-2022  MedicalMundi <info@medicalmundi@com>
+ * (c) 2019-2022  Zerai Teclai <teclaizerai@gmail.com>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
