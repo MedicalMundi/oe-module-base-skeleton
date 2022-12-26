@@ -29,7 +29,8 @@
   },
   "config": {
     "allow-plugins": {
-      "bamarni/composer-bin-plugin": true
+      "bamarni/composer-bin-plugin": true,
+      "openemr/oe-module-installer-plugin": true
     },
     "platform": {
       "php": "7.1.3"
