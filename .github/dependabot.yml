@@ -12,7 +12,7 @@ updates:
     open-pull-requests-limit: 10
     package-ecosystem: "composer"
     schedule:
-      interval: "daily"
+      interval: "monthly"
     versioning-strategy: "increase-if-necessary"
 
   - commit-message:
@@ -21,8 +21,20 @@ updates:
     directory: "/tools/ecs"
     labels:
       - "dependency"
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 1
     package-ecosystem: "composer"
     schedule:
-      interval: "daily"
+      interval: "monthly"
+    versioning-strategy: "increase-if-necessary"
+
+  - commit-message:
+      include: "scope"
+      prefix: "composer"
+    directory: "/tools/phpstan"
+    labels:
+      - "dependency"
+    open-pull-requests-limit: 4
+    package-ecosystem: "composer"
+    schedule:
+      interval: "monthly"
     versioning-strategy: "increase-if-necessary"
